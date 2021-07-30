@@ -1,0 +1,16 @@
+/* pick a color for headers
+pick a color for paragraphs
+pick background color
+pick a font
+get bootstrapping grid added--did this on html file, unsure yet if that's working
+*/
+
+body {
+    background-color: lightcyan;
+    color:rgb(37, 1, 63)
+}
+
+header {
+    background-color: lightcyan;
+    color:rgb(146, 32, 121)
+}
