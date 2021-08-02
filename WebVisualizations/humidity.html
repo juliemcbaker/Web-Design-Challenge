@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-<title>Landing Page</title>
+<title>Humidity Page</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="weather.css">
 </head>
+
+<div class="container">
 <body>
-    <!-- Our rows function in containers (grid created). -->
-    <div class="container">
-        <!--first row IS navbar-->
-        <div class="row">
-            <div class="col-md-12">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">DeadPlots</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">Plots</a>
-                                <div class="dropdown-content">
-                                    <a href="temperature.html">Temperature</a>
-                                    <a href="humidity.html">Humidity</a>
-                                    <a href="cloudiness.html">Cloudiness</a>
-                                    <a class="dropdown-item" href="wind.html">Wind</a>
-                                </div>    
-                              
+  <!-- Our rows function in containers (grid created). -->
+  
+    <!--first row IS navbar-->
+    <div class="row">
+      <div class="col-md-12">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">DeadPlots</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Plots</a>
+                        <div class="dropdown-content">
+                            <a href="temperature.html">Temperature</a>
+                            <a href="humidity.html">Humidity</a>
+                            <a href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="wind.html">Wind</a>
+                        </div>    
+                      
                                 <!--this did work before, but I took a line out & I don't recall what it is;
                                     I liked the style of the stuff above better, but it's not acting like a dropdown
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -32,92 +34,45 @@
                                   <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
                                   <li><a class="dropdown-item" href="wind.html">Wind</a></li>
                                 </div>  --> 
-                        </li>
-                        <li><a href="comparisons.html">Comparisons</a></li>
-                        <li><a href="data.html">Data</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <!-- One third of screen (4/12) -->
-<div class="col-md-4">
-    <!-- This is column 1 of 3 -->
-  </div>
-
-  <!-- One third of screen (4/12) -->
-  <div class="col-md-4">
-    <!-- This is column 2 of 3 -->
-  </div>
-
-  <!-- One third of screen (4/12) -->
-  <div class="col-md-4">
-
-    <!-- This is column 3 of 3 -->
-  </div>
-
-
+                </li>
+                <li><a href="comparisons.html">Comparisons</a></li>
+                <li><a href="data.html">Data</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
+   
+      <div class="row">
+        <div class="col-md-12">   
+        <header>
+              <h1>Latitude vs. Humidity</h1>  
+          </header>
+          </div></div>
 
-
-    </div>
-    
-
-<header>
-    <h1>Summary: Latitude vs. X</h1>  
-</header>
-
-<body id="home">
-
-</body>
 <section class="container">
-    
+ 
 </section>
-
-
-<p>This project investigated the relationship between latitude and different weather factors.
+<p>This page explores the relationship between latitude and humidity.
     Data were pulled from the OpenWeatherMap API for 589 cities on 20 June 2021.
+    Matplotlib was used for the data visualization.
 </p>
 <p>
-    Matplotlib was used to create visualizations of the relationships between different factors in the data.
-    Specifically, this site looks at the relationships between latitude and four other variables: temperature,
-    humidity, cloudiness, and wind speed.  
+While there are discernable clusters in the dataset, there does not appear to be a clear relationship 
+between distance from the equator and humidity in this sample. If one had to draw conclusions, it appears
+that the lowest levels of humidity fell within a range of -20 to +40 latitude. But there are also many
+locations within that range with high levels of humidity. As with other figures, there are more datapoints 
+for the Northern Hemisphere than the Southern Hemisphere because most of the Earth's landmass is in 
+the Northern Hemisphere.
 </p>
 
 
     <section>
-      <h1>WeatherPy</h1>
-      <article>
-        <p><em>Temperature Map</em></p>
-        <a target="_blank" href="assets/visualizations/01_latVtemp.png">
-        <img src="assets/visualizations/01_latVtemp.png" alt="Latitude by Temperature">
-      </a>
-      
-      </article>
-      <hr>
-      <article>
-        <p><em>Humidity Map</em></p>
-        <a target="_blank" href="assets/visualizations/02_latVhumid.png">
-      <img src="assets/visualizations/02_latVhumid.png" alt="Latitude by Humidity">
-      </a>
-      
-      </article>
-      <hr>
-      <article>
-        <p><em>Cloudiness Map</em></p>
-        <a href="assets/visualizations/03_latVclouds.png">
-        <img target="_blank" src="assets/visualizations/03_latVclouds.png" alt="cloudiness Map">
+     
+        <article>
+          <p><em>Humidity Map</em></p>
+          <a target="_blank" href="assets/visualizations/02_latVhumid.png">
+        <img src="assets/visualizations/02_latVhumid.png" alt="Latitude by Humidity">
         </a>
-        
-      </article>
-      <hr>
-      <!-- an example using figure/ficaption -->
-      <figure>
-        <figcaption><em>Wind Map</em></figcaption>
-        <a target="_blank" href="assets/visualizations/04_latVwind.png">
-        <img src="assets/visualizations/04_latVwind.png" alt="Wind Map">
-        </a>
-        
-      </figure>
     </section>
   </body>
   
@@ -132,6 +87,6 @@
         </ul>
     </nav>
 </footer>
-
+</div>
 </body>
 </html>
