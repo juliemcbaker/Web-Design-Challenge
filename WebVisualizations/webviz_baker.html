@@ -14,19 +14,24 @@
                 <nav class=navbar>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">Plots</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Dropdown link
-                                </a>
+                        <li><a href="index.html">DeadPlots</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" class="dropbtn">Plots</a>
+                                <div class="dropdown-content">
+                                    <a href="temperature.html">Temperature</a>
+                                    <a href="humidity.html">Humidity</a>
+                                    <a href="cloudiness.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="wind.html">Wind</a>
+                                </div>    
                               
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </div>
+                                <!--this did work before, but I took a line out & I don't recall what it is;
+                                    I liked the style of the stuff above better, but it's not acting like a dropdown
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="temperature.html">Temperature</a></li>
+                                  <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                                  <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                                  <li><a class="dropdown-item" href="wind.html">Wind</a></li>
+                                </div>  --> 
                         </li>
                         <li><a href="comparisons.html">Comparisons</a></li>
                         <li><a href="data.html">Data</a></li>
