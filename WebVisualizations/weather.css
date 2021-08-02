@@ -8,14 +8,23 @@ get bootstrapping grid added--did this on html file, unsure yet if that's workin
 
 body {
     background-color: lightcyan;
-    color:rgb(37, 1, 63)
+    color:rgb(37, 1, 63);
+    margin: 20, 10, 10, 20;
 }
 
 header {
     background-color: lightcyan;
-    color:rgb(146, 32, 121);
+    color:rgb(83, 23, 133);
     height: 200px;
     padding-top: 20px;
+    margin: 20, 10, 10, 20;
+}
+
+.container {
+    margin-top: 20;
+    margin-bottom: 10;
+    margin-left: 20;
+    margin-right: 20;
 }
 
   /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. 
