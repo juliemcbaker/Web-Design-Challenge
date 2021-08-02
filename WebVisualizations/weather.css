@@ -13,5 +13,29 @@ body {
 
 header {
     background-color: lightcyan;
-    color:rgb(146, 32, 121)
+    color:rgb(146, 32, 121);
+    height: 200px;
+    padding-top: 20px;
 }
+/* Giving our navbar some padding and a background color */
+.navbar {
+    padding: 10px;
+    background: #5191fd;
+  }
+
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. 
+  Floats could have been used too */
+  .navbar li {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 3px;
+  }
+  /* Getting rid of the default link styles here */
+  .navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
