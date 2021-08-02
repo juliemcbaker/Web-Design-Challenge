@@ -9,15 +9,14 @@ get bootstrapping grid added--did this on html file, unsure yet if that's workin
 body {
     background-color: lightcyan;
     color:rgb(37, 1, 63);
-    margin: 20, 10, 10, 20;
+    margin: 20px, 10px, 10px, 20px;
 }
 
 header {
     background-color: lightcyan;
     color:rgb(83, 23, 133);
-    height: 200px;
     padding-top: 20px;
-    margin: 20, 10, 10, 20;
+    margin: 20px, 10px, 10px, 20px;
 }
 
 .container {
