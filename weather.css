@@ -1,0 +1,97 @@
+/* pick a color for headers
+pick a color for paragraphs
+pick background color
+pick a font
+add cushions
+get bootstrapping grid added--did this on html file, unsure yet if that's working
+*/
+
+body {
+    background-color: lightcyan;
+    color:rgb(37, 1, 63);
+    margin: 20px, 10px, 10px, 20px;
+}
+
+header {
+    background-color: lightcyan;
+    color:rgb(83, 23, 133);
+    padding-top: 20px;
+    margin: 20px, 10px, 10px, 20px;
+}
+
+.container {
+    margin-top: 20;
+    margin-bottom: 10;
+    margin-left: 20;
+    margin-right: 20;
+}
+
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. 
+  Floats could have been used too */
+  /* .navbar li {
+    display: inline-block;
+    padding: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 2px;
+  }
+  */ 
+  /* Getting rid of the default link styles here 
+   .navbar li a {
+    color: #000;
+    text-decoration: none;
+  } */
+/* pulled from w3schools */
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: lightcyan;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
